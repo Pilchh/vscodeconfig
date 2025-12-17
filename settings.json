@@ -1,0 +1,97 @@
+{
+  "workbench.sideBar.location": "right",
+  "python.defaultInterpreterPath": "/bin/python",
+  "explorer.confirmDragAndDrop": false,
+  "jupyter.askForKernelRestart": false,
+  "editor.fontFamily": "'JetBrainsMono NF'",
+  "editor.fontSize": 16,
+  "workbench.colorTheme": "One Dark Pro Night Flat",
+  "workbench.iconTheme": "symbols",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "editor.inlayHints.enabled": "off",
+  "search.quickOpen.includeHistory": false,
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+
+  // Vim Options
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": false,
+  "vim.leader": "<space>",
+
+  // Vim Bindings
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // LSP
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"],
+    },
+    {
+      "before": ["g", "r", "n"],
+      "commands": ["editor.action.rename"],
+    },
+    {
+      "before": ["g", "r", "a"],
+      "commands": ["editor.action.quickFix"],
+    },
+    {
+      "before": ["g", "r", "r"],
+      "commands": ["editor.action.goToReferences"],
+    },
+    {
+      "before": ["g", "r", "i"],
+      "commands": ["editor.action.goToImplementation"],
+    },
+    {
+      "before": ["g", "r", "d"],
+      "commands": ["editor.action.revealDeclaration"],
+    },
+
+    // Files
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"],
+    },
+    {
+      "before": ["<leader>", "s", "f"],
+      "commands": ["workbench.action.quickOpen"],
+    },
+    {
+      "before": ["<leader>", "s", "g"],
+      "commands": ["workbench.action.findInFiles"],
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"],
+    },
+    {
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.view.scm"],
+    },
+
+    // Splits
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.focusRightGroup"],
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.focusLeftGroup"],
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.focusBelowGroup"],
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.focusAboveGroup"],
+    },
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "prettier.prettier-vscode",
+  },
+}
