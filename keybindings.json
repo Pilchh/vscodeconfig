@@ -67,9 +67,19 @@
 
   // Navigation
   {
+    "key": "space s f",
+    "command": "workbench.action.quickOpen",
+    "when": "!editorIsOpen",
+  },
+  {
+    "key": "space e",
+    "command": "workbench.view.explorer",
+    "when": "!editorIsOpen"
+  },
+  {
     "key": "space h",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "sideBarFocus",
+    "when": "sideBarFocus && !textInputFocus",
   },
   {
     "key": "escape",
@@ -102,23 +112,28 @@
   },
   {
     "key": "alt+h",
-    "command": "workbench.action.previousEditorInGroup"
+    "command": "workbench.action.previousEditorInGroup",
   },
   {
     "key": "alt+l",
-    "command": "workbench.action.nextEditorInGroup"
+    "command": "workbench.action.nextEditorInGroup",
   },
   {
     "key": "s",
     "command": "explorer.openToSide",
-    "when": "explorerViewletVisible && filesExplorerFocus"
+    "when": "explorerViewletVisible && filesExplorerFocus",
   },
   {
     "key": "ctrl+shift+h",
-    "command": "workbench.action.moveActiveEditorGroupLeft"
+    "command": "workbench.action.moveActiveEditorGroupLeft",
   },
   {
     "key": "ctrl+shift+l",
-    "command": "workbench.action.moveActiveEditorGroupRight"
-  }
+    "command": "workbench.action.moveActiveEditorGroupRight",
+  },
+  {
+    "key": "space q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!editorTextFocus",
+  },
 ]

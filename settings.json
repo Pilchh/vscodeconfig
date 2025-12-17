@@ -5,7 +5,7 @@
   "jupyter.askForKernelRestart": false,
   "editor.fontFamily": "'JetBrainsMono NF'",
   "editor.fontSize": 16,
-  "workbench.colorTheme": "One Dark Pro Night Flat",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.iconTheme": "symbols",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "editor.inlayHints.enabled": "off",
@@ -93,5 +93,6 @@
   ],
   "[jsonc]": {
     "editor.defaultFormatter": "prettier.prettier-vscode",
-  },
+},
+"workbench.activityBar.location": "top",
 }
