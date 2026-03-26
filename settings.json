@@ -95,4 +95,7 @@
     "editor.defaultFormatter": "prettier.prettier-vscode",
 },
 "workbench.activityBar.location": "top",
+"workbench.preferredDarkColorTheme": "Dark Charcoal Theme(SM)",
+"window.autoDetectColorScheme": true,
+"redhat.telemetry.enabled": false,
 }

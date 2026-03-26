@@ -69,17 +69,17 @@
   {
     "key": "space s f",
     "command": "workbench.action.quickOpen",
-    "when": "!editorIsOpen",
+    "when": "!editorIsOpen && !inputFocus",
   },
   {
     "key": "space e",
     "command": "workbench.view.explorer",
-    "when": "!editorIsOpen"
+    "when": "!editorIsOpen && !inputFocus"
   },
   {
     "key": "space h",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "sideBarFocus && !textInputFocus",
+    "when": "sideBarFocus && !inputFocus",
   },
   {
     "key": "escape",
@@ -121,7 +121,7 @@
   {
     "key": "s",
     "command": "explorer.openToSide",
-    "when": "explorerViewletVisible && filesExplorerFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
   },
   {
     "key": "ctrl+shift+h",
@@ -134,6 +134,6 @@
   {
     "key": "space q",
     "command": "workbench.action.closeActiveEditor",
-    "when": "!editorTextFocus",
+    "when": "!editorTextFocus && !inputFocus",
   },
 ]
